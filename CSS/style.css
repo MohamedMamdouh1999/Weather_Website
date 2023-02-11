@@ -1,0 +1,123 @@
+:root {
+    --main-color: #1e202b;
+    --light-main-color-body2: #262936;
+    --second-color: #009ad8;
+    --text-color: #BFC1C8;
+    --head1: #2d303d;
+    --head2: #222530;
+    --body1: #323544;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5 {
+    color: white;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+}
+.navbar,
+.input-group,
+.input-group input,
+.input-group input:focus,
+section:first-of-type,
+section:nth-of-type(3) {
+    background-color: var(--main-color);
+}
+.navbar img {
+    width: 64px;
+    height: 38px;
+}
+section:first-of-type {
+    background-image: url(../IMGS/banner.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.input-group input:focus {
+    box-shadow: none;
+    color: var(--text-color);
+}
+.input-group button:hover,
+.input-group button {
+    background-color: var(--second-color);
+}
+.head1 {
+    background-color: var(--head1);
+}
+.body1 {
+    background-color: var(--body1);
+}
+.head2 {
+    background-color: var(--head2);
+}
+.body2,
+section:nth-of-type(2),
+footer {
+    background-color: var(--light-main-color-body2);
+}
+.body1 h1 {
+    font-size: 90px;
+}
+@media screen and (max-width:308px) {
+    .body1 h1 {
+        font-size: 50px;
+        margin-bottom: 31.29px;
+    }
+}
+@media screen and (min-width:992px) {
+    .body1 h1 {
+        font-size: 90px;
+        margin-bottom: 31.29px;
+    }
+}
+.camera {
+    cursor: pointer;
+}
+.fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--main-color);
+    background-color: var(--second-color);
+    border-radius: 100%;
+}
+.fa-arrow-right,
+.time,
+.socialMedia i {
+    color: var(--second-color);
+}
+section:nth-of-type(3) li {
+    border-color: rgba(255, 255, 255, .1) !important;
+}
+.socialMedia {
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: background-color .4s;
+}
+.socialMedia i {
+    transition: color .4s;
+}
+.socialMedia:hover i {
+    color: white;
+}
+.socialMedia:hover:nth-of-type(1) {
+    background-color: #1877f2;
+}
+.socialMedia:hover:nth-of-type(2) {
+    background-color: #1da1f2;
+}
+.socialMedia:hover:nth-of-type(3) {
+    background-color: #dd4b39;
+}
+.socialMedia:hover:nth-of-type(4) {
+    background-color: #e60023;
+}

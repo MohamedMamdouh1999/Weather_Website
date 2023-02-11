@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="IMGS/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-lg-5 py-3">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="IMGS/logo.png" alt="Weather Logo">
+                    <div class="ps-3">
+                        <h4 class="m-0">Weather Website</h4>
+                        <p class="m-0">tagline goes here</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 py-5">
+                        <div class="input-group input-group-lg rounded-pill p-1">
+                            <input id="searchInput" type="text" class="form-control text-muted border-0 rounded-pill" placeholder="Find your location..."  aria-describedby="button-addon2">
+                            <button id="btnSearch" class="btn text-white rounded-pill px-4" type="button">Find</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 pe-lg-0">
+                        <div id="firstDay"></div>
+                    </div>
+                    <div class="col-lg-3 col-6 p-lg-0 pe-0">
+                        <div id="secondDay" class="text-center"></div>
+                    </div>
+                    <div class="col-lg-3 col-6 p-lg-0 ps-0">
+                        <div id="thirdDay" class="text-center"></div>
+                    </div>
+                </div>
+                <div class="row gy-3 py-5">
+                    <h2 class="pb-2 pt-5">Live Cameras</h2>
+                    <div class="col-lg-6 col-xl-3">
+                        <div>
+                            <div class="camera position-relative">
+                                <img class="w-100 rounded-2" src="IMGS/new york.jpg" alt="New York">
+                                <i class="fa-solid fa-circle-play fa-3x"></i>
+                            </div>
+                            <h4 class="fw-light pt-1 m-0">New York</h4>
+                            <p>8 Oct, 8:00AM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                        <div>
+                            <div class="camera position-relative">
+                                <img class="w-100 rounded-2" src="IMGS/los angeles.jpg" alt="Los Angeles">
+                                <i class="fa-solid fa-circle-play fa-3x"></i>
+                            </div>
+                            <h4 class="fw-light pt-1 m-0">Los Angeles</h4>
+                            <p>8 Oct, 8:00AM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                        <div>
+                            <div class="camera position-relative">
+                                <img class="w-100 rounded-2" src="IMGS/chicago.jpg" alt="Chicago">
+                                <i class="fa-solid fa-circle-play fa-3x"></i>
+                            </div>
+                            <h4 class="fw-light pt-1 m-0">Chicago</h4>
+                            <p>8 Oct, 8:00AM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                        <div>
+                            <div class="camera position-relative">
+                                <img class="w-100 rounded-2" src="IMGS/london.jpg" alt="London">
+                                <i class="fa-solid fa-circle-play fa-3x"></i>
+                            </div>
+                            <h4 class="fw-light pt-1 m-0">London</h4>
+                            <p>8 Oct, 8:00AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-start justify-content-center">
+                                <span class="time fs-3">06.10</span>
+                            </div>
+                            <div class="col-9">
+                                <h4>Doloremque laudantium totam sequi</h4>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus. Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur maxime nisi amet doloremque.</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-start justify-content-center">
+                                <span class="time fs-3">06.10</span>
+                            </div>
+                            <div class="col-9">
+                                <h4>Doloremque laudantium totam sequi</h4>
+                                <p class="m-0">Nobis architecto consequatur ab, ea, eum autem aperiam accusantium placeat vitae facere explicabo temporibus minus distinctio cum optio quis, dignissimos eius aspernatur fuga. Praesentium totam, corrupti beatae amet expedita veritatis.</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-start justify-content-center">
+                                <span class="time fs-3">06.10</span>
+                            </div>
+                            <div class="col-9">
+                                <h4>Doloremque laudantium totam sequi</h4>
+                                <p class="m-0">Enim impedit officiis placeat qui recusandae doloremque possimus, iusto blanditiis, quam optio delectus maiores. Possimus rerum, velit cum natus eos. Cumque pariatur beatae asperiores, esse libero quas ad dolorem. Voluptates.</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <h2 class="fw-normal pb-3">Application features</h2>
+                        <div class="row gy-3">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-2 pt-1 d-flex align-items-start justify-content-center">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold text-white mb-1">Natus error sit voluptatem accusantium</p>
+                                        <p class="m-0">Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-2 pt-1 d-flex align-items-start justify-content-center">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold text-white mb-1">Natus error sit voluptatem accusantium</p>
+                                        <p class="m-0">Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-2 pt-1 d-flex align-items-start justify-content-center">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold text-white mb-1">Natus error sit voluptatem accusantium</p>
+                                        <p class="m-0">Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="fw-normal pb-3">Weather analyssis</h2>
+                        <ul class="list-unstyled">
+                            <li class="border-bottom pb-1"><i class="fa-solid fa-arrow-right pe-2"></i>Accusantium doloremque laudantium rem aperiam</li>
+                            <li class="border-bottom pb-1 pt-2"><i class="fa-solid fa-arrow-right pe-2"></i>Eaque ipsa quae ab illo inventore veritatis quasi</li>
+                            <li class="border-bottom pb-1 pt-2"><i class="fa-solid fa-arrow-right pe-2"></i>Architecto beatae vitae dicta sunt explicabo</li>
+                            <li class="border-bottom pb-1 pt-2"><i class="fa-solid fa-arrow-right pe-2"></i>Nemo enim ipsam voluptatem quia voluptas</li>
+                            <li class="border-bottom pb-1 pt-2"><i class="fa-solid fa-arrow-right pe-2"></i>Aspernatur aut odit aut fugit, sed quia consequuntur</li>
+                            <li class="border-bottom pb-1 pt-2"><i class="fa-solid fa-arrow-right pe-2"></i>Magni dolores eos qui ratione voluptatem sequi</li>
+                            <li class="pt-2"><i class="fa-solid fa-arrow-right pe-2"></i>Neque porro quisquam est qui dolorem ipsum quia</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="fw-normal pb-3">Awesome Photos</h2>
+                        <div class="row g-1">
+                            <div class="col-4 ps-0">
+                                <img class="w-100 h-100" src="IMGS/1.jpg" alt="Awesome Photo">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 h-100" src="IMGS/2.jpg" alt="Awesome Photo">
+                            </div>
+                            <div class="col-4 pe-0">
+                                <img class="w-100 h-100" src="IMGS/3.jpg" alt="Awesome Photo">
+                            </div>
+                            <div class="col-4 ps-0">
+                                <img class="w-100 h-100" src="IMGS/4.jpg" alt="Awesome Photo">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 h-100" src="IMGS/5.jpg" alt="Awesome Photo">
+                            </div>
+                            <div class="col-4 pe-0">
+                                <img class="w-100 h-100" src="IMGS/6.jpg" alt="Awesome Photo">
+                            </div>
+                            <div class="col-4 ps-0">
+                                <img class="w-100 h-100" src="IMGS/7.jpg" alt="Awesome Photo">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 h-100" src="IMGS/8.jpg" alt="Awesome Photo">
+                            </div>
+                            <div class="col-4 pe-0">
+                                <img class="w-100 h-100" src="IMGS/9.jpg" alt="Awesome Photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container py-5">
+            <div class="row g-3">
+                <div class="col-lg-8">
+                    <div class="input-group input-group-lg rounded-pill p-1">
+                        <input type="text" class="form-control fs-6 border-0 rounded-pill" placeholder="Enter your email to subscribe..."  aria-describedby="button-addon2">
+                        <button class="btn fs-6 text-white rounded-pill px-3" type="button" id="button-addon1">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="socialMedia rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="socialMedia rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="socialMedia rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="socialMedia rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-lg-4">
+                    <p class="m-0">Copyright 2023 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
